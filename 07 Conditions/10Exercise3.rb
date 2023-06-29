@@ -18,3 +18,14 @@ def divisible_by_three_and_four(number)
       return false
   end
 end
+
+# --------------------------------------------------- OU
+def divisible_by_three_and_four1(number)
+  divisible_by_three = number % 3 == 0
+  divisible_by_four = number % 4 == 0
+  divisible_by_three && divisible_by_four
+end
+
+
+puts divisible_by_three_and_four1(3)
+puts divisible_by_three_and_four1(12)
